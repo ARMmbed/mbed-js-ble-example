@@ -1,0 +1,17 @@
+{
+  "name": "mbed-js-ble-example",
+  "version": "0.0.1",
+  "description": "Example of using ble in jerryscript on mbed",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Else <matthewelse1997@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mbed-js-ble": "matthewelse/mbed-js-ble"
+  },
+  "devDependencies": {
+    "mbed-js-gulp": "matthewelse/mbed-js-gulp"
+  }
+}
