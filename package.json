@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Matthew Else <matthewelse1997@gmail.com>",
+  "author": "Matthew Else <Matthew.Else@arm.com>",
   "license": "MIT",
   "dependencies": {
-    "mbed-js-ble": "matthewelse/mbed-js-ble"
+    "mbed-js-ble": "ARMmbed/mbed-js-ble"
   },
   "devDependencies": {
     "mbed-js-gulp": "ARMmbed/mbed-js-gulp"
