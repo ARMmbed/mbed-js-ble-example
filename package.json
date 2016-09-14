@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matthew Else <Matthew.Else@arm.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "dependencies": {
     "mbed-js-ble": "ARMmbed/mbed-js-ble"
   },

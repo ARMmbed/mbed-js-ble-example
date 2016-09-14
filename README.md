@@ -3,7 +3,7 @@
 Try:
 
 ```
-git clone https://github.com/matthewelse/mbed-js-ble-example
+git clone https://github.com/ARMmbed/mbed-js-ble-example
 cd mbed-js-ble-example
 npm install
 gulp --target=NRF52_DK
