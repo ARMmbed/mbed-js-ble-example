@@ -6,7 +6,7 @@ var led_on = 0;
 
 var digital_outs = [];
 
-var leds = [LED1, LED2, LED3, LED4];
+var leds = [LED2, LED3, LED4];
 
 // Uncomment to use the grove color sensor
 //ColorSensor.init(D14, D15);
@@ -15,7 +15,7 @@ function connect_pins()
 {
   print("Creating new DigitalOuts");
   digital_outs = [];
-  for (var i = 0; i < 4; i++)
+  for (var i = 0; i < 3; i++)
   {
     digital_outs.push(DigitalOut(leds[i], led_off));
     if (digital_outs[i].is_connected())
@@ -36,27 +36,13 @@ function blink()
   digital_outs[0].write(led_off);
   digital_outs[1].write(led_off);
   digital_outs[2].write(led_off);
-  digital_outs[3].write(led_off);
 
   digital_outs[led].write(led_on);
 
-  print("Finished with LED " + led);
-  led = (led + 1) % 4;
+  // print("Finished with LED " + led);
+  led = (led + 1) % 3;
 }
 
 module.exports = blink;
-
-// SW2 on FRDM-K64F and BUTTON2 on NRF52
-var button;
-if (typeof SW2 !== 'undefined') {
-    button = InterruptIn(SW2);
-} else if (typeof BUTTON2 !== 'undefined') {
-    button = InterruptIn(BUTTON2);
-} else {
-    print("no button specified");
-}
-button.fall(function() {
-  print("YOU PUSHED THE BUTTON!");
-});
 
 print("blink.js has finished executing.");
